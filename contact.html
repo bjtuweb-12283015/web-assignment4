@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>与我联系</title>
+
+    <script type="text/javascript">
+      function validate() {
+        var subject = document.getElementById("subject");
+        if (!subject.value) {
+          subject.style.borderColor = "red";
+        }
+        var email = document.getElementById("email");
+        if (!email.value) {
+          email.style.borderColor = "red";
+        }
+      }
+  </script>
+
+    <style type="text/css">
+    body {
+    	background-color: #C9C;
+      padding-left:300px;
+        }
+
+      .one
+      {
+        padding-left:0px;
+        padding-right:0px;
+      }
+      .abc
+      {
+      	text-decoration:underline;
+      }
+       </style>
+      
+  
+  </head>
+  <body>
+    <div class="headline">
+  <h1>吴倩倩</h1>
+  <span class="subtitle"></span> 北京交通大学</div>
+    <div class="sidebar">
+      <table width="487" border="0">
+        <tr>
+          <td width="254"><img src="hua.jpg" width="300" height="319"  alt=""/></td>
+          <td width="259"><ul>
+        <li><a href="#">我的博客</a></li>
+        <li><a href="#">我的微博</a></li>
+        <li><a href="contact.html">与我联系</a></li>
+        <li> <a href="hongloumeng.html"> 返回</a></li>
+      </ul>
+          </td>
+        </tr>
+      </table>
+  </div>
+    <div class="container">
+      <form action="#" id="contact-form">
+        <h2> 与我联系</h2>
+     <input id="subject" type="text" size="70" placeholder="主题"/><br/>
+     <input id="email" type="text" size="70" placeholder="邮箱"/><br/>
+     <textarea id="content" cols="70" rows="5"></textarea><br/>
+     <button onclick="validate()">提交</button>
+    </form>
+
+
+        </div>
+      </form>
+    </div>
+    <hr class="one"  width="900"/>
+    <div class="copyright">
+      <div align="center" class='abc'>&copy; 版权所有</div>
+    </div>
+  </body>
+</html>

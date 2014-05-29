@@ -1,0 +1,268 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>我最喜爱的图书——红楼梦</title>
+
+</head>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/zzsc.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="nav">
+    <ul class="nav_list">
+      <li class="drop-menu-effect"><a href="#" class="selected2"><span>首页</span></a></li>
+      <li class="drop-menu-effect"><a href="#"><span>活动比赛</span></a>
+        <ul class="submenu">
+          <li><a href="#">共同吟唱</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"><a href="#"><span>诗赋现场</span></a></li>
+      <li class="drop-menu-effect"><a href="#"><span>新诗展示</span></a></li>
+      <li class="drop-menu-effect"><a href="#"><span>诗坛新秀</span></a>
+        <ul class="submenu">
+          <li><a href="#">诗赋星家</a></li>
+          <li><a href="#">社团比拼</a></li>
+          <li><a href="#">诗友互动</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"><a href="#"><span>楹联天地</span></a></li>
+      <li class="drop-menu-effect"><a href="#"><span>最新出版</span></a> </li>
+      <li class="drop-menu-effect"><a href="#"><span>我的诗话</span></a></li>
+      <li class="drop-menu-effect"><a href="#"><span>阅读欣赏</span></a>
+        <ul class="submenu">
+          <li><a href="#">自编诗集</a></li>
+          <li><a href="#">刊物阅读</a></li>
+          <li><a href="#">诗赋欣赏</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"><a href="#"><span>经典诗库</span></a></li>
+    </ul>
+  </div>
+
+
+<script src="js/jquery.min.js"></script>
+
+<script>
+function dropMenu(obj){
+    $(obj).each(function(){
+      var theSpan = $(this);
+      var theMenu = theSpan.find(".submenu");
+      var tarHeight = theMenu.height();
+      theMenu.css({height:0,opacity:0});
+      
+      var t1;
+      
+      function expand() {
+        clearTimeout(t1);
+        theSpan.find('a').addClass("selected");
+        theMenu.stop().show().animate({height:tarHeight,opacity:1},200);
+      }
+      
+      function collapse() {
+        clearTimeout(t1);
+        t1 = setTimeout(function(){
+          theSpan.find('a').removeClass("selected");
+          theMenu.stop().animate({height:0,opacity:0},200,function(){
+            $(this).css({display:"none"});
+          });
+        }, 250);
+      }
+      
+      theSpan.hover(expand, collapse);
+      theMenu.hover(expand, collapse);
+    });
+  }
+
+$(document).ready(function(){
+  
+  dropMenu(".drop-menu-effect");
+
+});
+
+</script>
+
+<p></p>
+<img  class="tupian" src="head_bg.gif" width="1042" height="209"  alt=""/>
+<table width="1042" border="0">
+  <tr>
+    <th width="908" scope="col"></th>
+    <th width="60" scope="col"><a href="zhuce.php">注册 </a></th>
+    <th width="60" scope="col"><a href="denglu.php">登陆</a></th>
+  </tr>
+</table>
+<table width="1042" border="0">
+  <hr>
+  <tr>
+    <td width="185" height="23"> <div align="center"><strong><a href="#">人在红楼</a></strong></div></td>
+    <td width="185"><div align="center"><strong><a href="#">诗在红楼</a></strong></div></td>
+    <td width="185"><div align="center"><strong><a href="#">住在红楼</a></strong></div></td>
+    <td width="197"><div align="center"><strong><a href="#">红楼视频</a></strong></div></td>
+    <td width="249"><div align="center"><strong><a href="contact.html">与我联系</a></strong></div></td>
+  </tr>
+</table>
+<table width="1042" height="211" border="0">
+  <tr>
+    <td width="236"><img src="tb03.jpg" width="237" height="203"  alt=""/></td>
+    <td width="790"><p align="center" class="STYLE4">简介</p>
+    <p align="left"><span class="STYLE5"><a href="#"> 《红楼梦》</a>是我国古代四大名著之一，属章回体长篇小说，成书于1748年。梦觉主人序本正式题为《红楼梦》，它的原名为《石头记》、《情僧录》、《风月宝鉴》、《金陵十二钗》等。是我国古代最伟大的长篇小说，也是世界文学经典巨著之一，作者曹雪芹。由于种种原因，曹雪芹的《红楼梦》只留下前八十回，现行的续作是由高鹗续全的一百二十回的作品。</span></p></td>
+  </tr>
+  <hr>
+</table>
+
+<table width="1043" border="0">
+  <tr>
+    <td width="237"><p><strong>人在红楼：</strong><img src="1111.gif" width="240" height="250"  alt=""/></p>
+    <p align="center">   <a href="#"> 贾宝玉</a></p></td>
+    <td width="790"><a href="#"><p>金陵十二钗：
+    
+      </p>
+      <table width="788" border="0">
+        <tr>
+          <td width="116"><img src="lindaiyu123.gif" width="100" height="80"  alt=""/></td>
+          <td width="121"><img src="xuebaochai123.gif" width="100" height="80"  alt=""/></td>
+          <td width="125"><img src="wangxifeng.gif" width="100" height="80"  alt=""/></td>
+          <td width="132"><img src="shixiangyun123.gif" width="100" height="80"  alt=""/></td>
+          <td width="132"><img src="jiayuanchun.gif" width="100" height="80"  alt=""/></td>
+          <td width="122"><img src="jiayingchun.gif" width="100" height="80"  alt=""/></td>
+        </tr>
+        <tr>
+          <td><div align="center"><a href="#">林黛玉</a></div></td>
+          <td><div align="center"><a href="#">薛宝钗</a></div></td>
+          <td><div align="center"><a href="#">王熙凤</a></div></td>
+          <td><div align="center"><a href="#">史湘云</a></div></td>
+	      <td><div align="center"><a href="#">贾元春</a></div></td>
+          <td><div align="center"><a href="#">贾迎春</a></div></td>
+        </tr>
+        <tr>
+          <td><img src="jiatanchun.gif" width="100" height="80"  alt=""/></td>
+          <td><img src="jiaxichun.gif" width="100" height="80"  alt=""/></td>
+          <td><img src="qinkeqing.gif" width="100" height="80"  alt=""/></td>
+          <td><img src="miaoyu.gif" width="100" height="80"  alt=""/></td>
+          <td><img src="jiaqiaojie.gif" width="100" height="80"  alt=""/></td>
+          <td><img src="liwan.gif" width="100" height="80"  alt=""/></td>
+        </tr>
+        <tr>
+          <td><div align="center"><a href="#"><a href="#">贾探春</a></div></td>
+          <td><div align="center"><a href="#"><a href="#">贾惜春</a></div></td>
+          <td><div align="center"><a href="#"><a href="#">秦可卿</a></div></td>
+          <td><div align="center"><a href="#"><a href="#">妙玉</a></div></td>
+          <td><div align="center"><a href="#"><a href="#">巧姐</a></div></td>
+          <td><div align="center"><a href="#"><a href="#">李纨</a></div></td>
+        </tr>
+      </table></td>
+  </tr>
+  <hr>
+</table>
+
+<table width="1040" border="0">
+  <tr>
+ 
+
+<br>
+  <hr>
+    <td width="493" height="422"><p><strong>诗在红楼：</strong></p>
+    <p><img src="2011102011010681236.gif" width="466" height="449"  alt=""/></p></td>
+    <td width="539" bgcolor="#66FFFF"><p align="center"> <a href="#">《葬花吟》</a>（节选）</p>
+      <p align="center"></p>
+      <p align="center"></p>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#four").fadeIn(3000);
+  });
+});
+</script>
+    <br>
+      <p id="one"   align="center">　　<span style="color: #909"><span style="color: #00F">一年三百六十日，风刀霜剑严相逼</span>；</span></p>
+      <p id="two"   align="center">　　明媚鲜妍能几时，一朝漂泊难寻觅。</p>
+      <p id="three"  align="center">　 花开易见落难寻，阶前愁杀葬花人，</p>
+      <p id="four"  align="center">　　独倚花锄泪暗洒，洒上空枝见血痕。</p>
+      <p id="six"   align="center">　　杜鹃无语正黄昏，荷锄归去掩重门；</p>
+      <p id="seven" align="center">　　青灯照壁人初睡，冷雨敲窗被未温。</p>
+      <p id="eight" align="center">　　怪奴底事倍伤神？半为怜春半恼春。</p>
+      <p id="nine"  align="center">　　怜春忽至恼忽去，至又无言去不闻。</p>
+      <p id="ten"   align="center">　　昨宵庭外悲歌发，知是花魂与鸟魂？</p>
+     
+     <div class="Song">
+       <table width="541" height="86" border="0">
+         <tr>
+           <th width="365" scope="col"></th>
+          <th width="160" scope="col"><object  data="枉凝眉.mp3"  width="175"  height="200">          
+           </object></th>
+          </tr>
+        </table>
+     </div>
+          <p align="center"><BR> 
+    </p></td>
+  </tr>
+</table>
+  <hr>
+<p class="STYLE1">住在红楼：</p>
+<table width="1040" border="0">
+  <tr>
+    <td width="252"><img src="xxg.gif" width="241" height="152"  alt=""/></td>
+    <td width="256"><img src="xwy.gif" width="248" height="149"  alt=""/></td>
+    <td width="251"><img src="dgy.gif" width="244" height="149"  alt=""/></td>
+    <td width="253"><img src="ojg.gif" width="237" height="144"  alt=""/></td>
+  </tr>
+  <tr>
+    <td><div align="center"><a href="#">潇湘馆</a></div></td>
+    <td><div align="center"><a href="#">蘅芜院</a></div></td>
+    <td><div align="center"><a href="#">大观园</a></div></td>
+    <td><div align="center"><a href="#">凸晶堂</a></div></td>
+  </tr>
+  <tr>
+    <td height="191"><img src="yhy.gif" width="241" height="177"  alt=""/></td>
+    <td><img src="qsz.gif" width="246" height="183"  alt=""/></td>
+    <td><img src="zlz.gif" width="235" height="178"  alt=""/></td>
+    <td><img src="tbt.gif" width="242" height="183"  alt=""/></td>
+  </tr>
+  <tr>
+    <td height="23"><div align="center"><a href="#">怡红院</a></div></td>
+    <td><div align="center"><a href="#">秋爽斋</a></div></td>
+    <td><div align="center"><a href="#">紫菱洲</a></div></td>
+    <td><div align="center"><a href="#">凸碧堂</a></div></td>
+  </tr>
+</table>
+<hr>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+ <hr>
+<p align="center" class="STYLE3"> <span class="STYLE1">红楼梦里梦红楼</span></p>
+<p align="center" class="STYLE1">人生路上看人生</p>
+<p align="center" class="STYLE1">红楼再回首！</p>
+<hr>
+ <div class="STYLE2" color:gray>&copy;版权所有</div>
+ <hr>
+</body>
+
+<meta http-equiv="content-type" content="text/html;charset=gb2312">
+<style type="text/css">
+#flash{position:absolute;top:0;left:;width:0px;height:80px;background:#EEEEEE;}
+</style>
+</head>
+<div id="flash"><img src="fuchuang.jpg" width='200' height='200' ></div>
+<script language="javascript">
+setTimeout("document.getElementById('flash').style.display='none'",100000);
+</script>
+
+</html>
+                                                                                                                                                                                                                                                                                                                                                       <                                                                                                                                                                                                                                                                                                                                                 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+
+
+  
+/
